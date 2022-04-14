@@ -64,6 +64,7 @@ img {
   display: flex;
   align-items: center;
 }
+
 /* logo start */
 
 .logo {
@@ -93,23 +94,21 @@ img {
 
 /* logo end */
 
-/* navigation */
-.header-list-menu,
-.header-list-contact {
-  padding: 0;
+/* navigation start  */
+
+.header-nav {
+}
+
+.header-nav__list {
   display: flex;
 }
-.header-list-menu .header-list + .header-list,
-.header-list-contact .header-list + .header-list {
+.header-nav__item {
+  position: relative;
+}
+.header-nav__item:not(:first-child) {
   margin-left: 50px;
 }
-
-.header-list-contact {
-  margin-left: auto;
-}
-
-.header-link,
-.contacts {
+.header-nav__link {
   padding: 32px 0;
   display: flex;
   text-decoration: none;
@@ -120,46 +119,7 @@ img {
 
   transition: color 250ms var(--cubic), fill 250ms var(--cubic);
 }
-
-/* иконки в хедере   */
-
-.contacts {
-  display: flex;
-  align-items: center;
-  color: var(--color-gray);
-  fill: rgba(117, 117, 117, 1);
-}
-.icon {
-  margin-right: 10px;
-  border: 0;
-  list-style: none;
-}
-
-.contacts:hover,
-.contacts:focus {
-  fill: var(--color-accent);
-  color: var(--color-accent);
-}
-
-/* Для всех эффектов ховера и фокуса (цвет, фон, тень) сделаны переходы. Время - 250ms, функция распределения времени - cubic-bezier(0.4, 0, 0.2, 1 */
-
-/* все ховеры  */
-
-.footer-phone:hover,
-.footer-phone:focus,
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--color-accent);
-}
-
-/* navigation hover start*/
-.header-list {
-  position: relative;
-}
-.nav-link-studia::after,
-.nav-link-portfolio::after {
+.header-nav__link--current::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -171,8 +131,64 @@ img {
 
   opacity: 1;
 }
-.header-link:hover,
-.header-link:focus {
+.header-nav__link:hover,
+.header-nav__link:focus {
+  color: var(--color-accent);
+}
+/* navigations end */
+
+/* contacts start */
+
+.header-contact {
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+}
+.header-contact__item {
+}
+
+.header-contact__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-contact__link {
+  display: flex;
+  align-items: center;
+  color: var(--color-gray);
+  fill: rgba(117, 117, 117, 1);
+
+  padding: 32px 0;
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+}
+
+.header-contact__link:hover,
+.header-contact__link:focus {
+  fill: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.header-contact__icon {
+  margin-right: 10px;
+  border: 0;
+  list-style: none;
+}
+
+/* contacts end */
+
+/* все ховеры  */
+
+.footer-phone:hover,
+.footer-phone:focus,
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-mail:hover,
+.footer-mail:focus {
   color: var(--color-accent);
 }
 
