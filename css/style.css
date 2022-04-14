@@ -60,16 +60,11 @@ img {
   outline: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
-/* logo */
-
-.header .logo {
-  margin-right: 93px;
-  padding: 0;
-}
+/* logo start */
 
 .logo {
   font-size: 26px;
@@ -80,9 +75,24 @@ img {
   color: var(--color-accent);
 }
 
-.header-logo-accent {
-  color: #000000;
+.header__logo {
+  margin-right: 93px;
 }
+
+.header__logo--color {
+  color: var(--color-black);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer__logo--color {
+  color: var(--color-white);
+}
+
+/* logo end */
+
 /* navigation */
 .header-list-menu,
 .header-list-contact {
@@ -471,15 +481,6 @@ img {
   display: flex;
   line-height: 1.7;
   font-style: normal;
-}
-
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.footer-logo-accent {
-  color: var(--color-white);
 }
 
 .footer-contacts {
