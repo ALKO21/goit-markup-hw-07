@@ -204,63 +204,66 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-        <div class="container logo-welcome">
-            <div class="logo-contacts">
-                <a class="logo" href="./index.html"> Web<span class="footer-logo-accent">Studio</span></a>
+        <div class="footer__container container">
+            <div>
+                <a class="logo footer__logo" href="./index.html"> Web<span class="footer__logo--color">Studio</span></a>
                 <address class="footer-contacts">
-                    <ul>
-                        <li class="address-list"><a class="footer-adress" href="https://goo.gl/maps/ktapFahStS3y24yC7">г.
+                    <ul class="footer-contacts__list">
+                        <li class="footer-contacts__item"><a class="footer-contacts__data footer-contacts__data--color"
+                                href="https://goo.gl/maps/ktapFahStS3y24yC7">г.
                                 Киев, пр-т Леси Украинки, 26</a>
-                        <li class="address-list"><a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+                        <li class="footer-contacts__item"><a class="footer-contacts__data"
+                                href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class="address-list"><a class="footer-phone" href="tel:+380991111111"> +38 099 111 11 11</a>
+                        <li class="footer-contacts__item"><a class="footer-contacts__data" href="tel:+380991111111"> +38 099
+                                111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="welcome-container">
-                <h3 class="welcome-title">присоединяйтесь</h3>
-                <ul class="footer-networks">
-                    <li class="footer-network-list ">
-                        <a class="footer-network-link" href="">
-                            <svg class="network-items" width="20" height="20">
-                                <use class="sn-icons" href="./img-vect/sprite.svg#icon-instagram"> </use>
+            <div class="social-neworks">
+                <h3 class="social-neworks__title">присоединяйтесь</h3>
+                <ul class="social-neworks__list ">
+                    <li class="social-neworks__item ">
+                        <a class="social-neworks__link" href="">
+                            <svg width="20" height="20">
+                                <use href="./img-vect/sprite.svg#icon-instagram"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-network-list">
-                        <a class="footer-network-link" href="">
-                            <svg class="network-items" width="20" height="20">
-                                <use class="sn-icons" href="./img-vect/sprite.svg#icon-twitter"> </use>
+                    <li class="social-neworks__item">
+                        <a class="social-neworks__link" href="">
+                            <svg width="20" height="20">
+                                <use href="./img-vect/sprite.svg#icon-twitter"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-network-list ">
-                        <a class="footer-network-link" href="">
-                            <svg class="network-items" width="20" height="20">
-                                <use class="sn-icons" href="./img-vect/sprite.svg#icon-facebook"> </use>
+                    <li class="social-neworks__item ">
+                        <a class="social-neworks__link" href="">
+                            <svg width="20" height="20">
+                                <use href="./img-vect/sprite.svg#icon-facebook"> </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-network-list ">
-                        <a class="footer-network-link" href="">
-                            <svg class="network-items" width="20" height="20">
-                                <use class="sn-icons" href="./img-vect/sprite.svg#icon-linkedin"> </use>
+                    <li class="social-neworks__item ">
+                        <a class="social-neworks__link" href="">
+                            <svg width="20" height="20">
+                                <use href="./img-vect/sprite.svg#icon-linkedin"> </use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-<!-- Subscription -->
-            <div class="subscription-section">
-                <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-                <form class="subscription-form">
-                    <label class="subscription-label" for="email"></label>
-                    <input class="subscription-input" type="email" name="subscription" id="email" placeholder="E-mail" />
-                    <button class="subscription-btn" type="submit">
+            <!-- Subscription -->
+            <div class="subscription">
+                <h3 class="subscription__title">Подпишитесь на рассылку</h3>
+                <form class="subscription__form">
+                    <label class="subscription__label" for="email"></label>
+                    <input class="subscription__input" type="email" name="subscription" id="email" placeholder="E-mail" />
+                    <button class="button subscription-button" type="submit">
                         Подписаться
-                        <svg class="icon-send" width="24" height="24">
-                            <use class="svg-send" href="./img-vect/sprite.svg#icon-send"></use>
+                        <svg class="subscription-button__icon" width="24" height="24">
+                            <use class="subscription-button__svg" href="./img-vect/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>

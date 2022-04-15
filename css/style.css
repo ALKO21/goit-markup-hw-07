@@ -56,6 +56,11 @@ img {
 }
 
 .section__title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .section__title--visually-hidden {
@@ -263,59 +268,48 @@ img {
 
 /* our_features end*/
 
-/* Actions */
-
-/* текст шапок */
-.actions-title,
-.team-title,
-.projects-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
+/* actions start */
 
 .actions {
   padding-top: 0;
 }
 
-.actions-title {
-  margin-bottom: 50px;
-}
-.actions-list {
+.actions__list {
   display: flex;
 }
 
-.actions-list .action-item + .action-item {
-  margin-left: 30px;
-}
-
-/* Надпись на "чем мы занимаемся" */
-/* начало */
-
-.action-item {
+.action__item {
   position: relative;
 }
 
-.action-name-background {
+.action__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.actions__block {
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
   width: 100%;
+
+  padding-bottom: 27px;
+  padding-top: 27px;
+
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.action-name {
+.actions__name {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--color-white);
 }
-/* конец */
 
-/* our_team */
+/* actions end */
+
+/* our_team start */
 .team {
   background-color: #f5f4fa;
 }
@@ -331,10 +325,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team-title {
-  margin-bottom: 50px;
 }
 
 .team-list .items + .items {
