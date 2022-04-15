@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -56,145 +56,143 @@
             </ul>
         </div>
     </header>
-    <!-- our progects -->
+<!-- our projects -->
     <main>
         <section class="section projects">
             <div class="container">
-                <h1 class="projects-hiddentitle">Наши проекты</h1>
-                <ul class="projects-list-buttons">
-                    <li class="item"><button class="project-button" type="button">Вce</button></li>
-                    <li class="item"><button class="project-button" type="button">Веб-сайты</button></li>
-                    <li class="item"><button class="project-button" type="button">Приложения</button></li>
-                    <li class="item"><button class="project-button" type="button">Дизайн</button></li>
-                    <li class="item"><button class="project-button" type="button">Маркетинг</button></li>
+                <h1 class="section__title section__title--visually-hidden">Наши проекты</h1>
+                <ul class="button-block">
+                    <li class="button-block__item"><button class="button-block__object" type="button">Вce</button></li>
+                    <li class="button-block__item"><button class="button-block__object" type="button">Веб-сайты</button></li>
+                    <li class="button-block__item"><button class="button-block__object" type="button">Приложения</button></li>
+                    <li class="button-block__item"><button class="button-block__object" type="button">Дизайн</button></li>
+                    <li class="button-block__item"><button class="button-block__object" type="button">Маркетинг</button></li>
                 </ul>
-                <ul class="projects-list-pictures">
-<!-- overlay start -->            
-                    <li class="picture-def">
-                        <a class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project1.jpg" alt="Ноутбук" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <a class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project1.jpg" alt="Ноутбук" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Технокряк</h2>
-                                <p class="project-text">Веб-сайт</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Технокряк</h2>
+                                <p class="projects-sample__direction">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
                     
-<!-- overlay finish -->
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project2.jpg" alt="Баскетбол" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project2.jpg" alt="Баскетбол" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Постер New Orlean vs Golden Star</h2>
-                                <p class="project-text">Дизайн</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Постер New Orlean vs Golden Star</h2>
+                                <p class="projects-sample__direction">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project3.jpg" alt="Рыба" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project3.jpg" alt="Рыба" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Ресторан Seafood</h2>
-                                <p class="project-text">Приложение</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Ресторан Seafood</h2>
+                                <p class="projects-sample__direction">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project4.jpg" alt="Наушники" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project4.jpg" alt="Наушники" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Проект Prime</h2>
-                                <p class="project-text">Маркетинг</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Проект Prime</h2>
+                                <p class="projects-sample__direction">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project5.jpg" alt="Короба" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project5.jpg" alt="Короба" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Проект Boxes</h2>
-                                <p class="project-text">Приложение</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Проект Boxes</h2>
+                                <p class="projects-sample__direction">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project6.jpg" alt="Монитор" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project6.jpg" alt="Монитор" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Inspiration has no Borders</h2>
-                                <p class="project-text">Веб-сайт</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Inspiration has no Borders</h2>
+                                <p class="projects-sample__direction">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project7.jpg" alt="Журнал" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project7.jpg" alt="Журнал" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Издание Limited Edition</h2>
-                                <p class="project-text">Дизайн</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Издание Limited Edition</h2>
+                                <p class="projects-sample__direction">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a  class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project8.jpg" alt="Ярлык" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a  class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project8.jpg" alt="Ярлык" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Проект LAB</h2>
-                                <p class="project-text">Маркетинг</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Проект LAB</h2>
+                                <p class="projects-sample__direction">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="picture-def">
-                        <a class="project-link" href="">
-                            <div class="project-box">
-                                <img class="img" src="./img-rast/project9.jpg" alt="Ноутбук" width="370">
-                                <p class="project-overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
+                    <li class="projects__item">
+                        <a class="projects-sample" href="">
+                            <div class="projects-sample__pic-block ">
+                                <img src="./img-rast/project9.jpg" alt="Ноутбук" width="370">
+                                <p class="projects-sample__pic-block--overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить
                                 исчерпывающие сведения по компании или частном лице.</p>
                             </div>
-                            <div class="title2-text">
-                                <h2 class="project-titel2">Growing Business</h2>
-                                <p class="project-text">Приложение</p>
+                            <div class="projects-sample__title">
+                                <h2 class="projects-sample__name">Growing Business</h2>
+                                <p class="projects-sample__direction">Приложение</p>
                             </div>
                         </a>
                     </li>
