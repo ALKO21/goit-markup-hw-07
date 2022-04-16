@@ -1,0 +1,126 @@
+/* footer start */
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  align-items: baseline;
+  display: flex;
+}
+
+/* footer contacts start */
+
+.footer-contacts {
+  width: 231px;
+}
+
+.footer-contacts__item {
+  font-size: 14px;
+}
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts__data {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+
+  transition: color 250ms var(--cubic);
+}
+
+.footer-contacts__data--color {
+  color: var(--color-white);
+}
+
+.footer-contacts__data:hover,
+.footer-contacts__data:focus {
+  color: var(--color-accent);
+}
+/* footer contacts end  */
+/* footer social networks start */
+
+.social-neworks {
+  color: var(--color-white);
+  margin-left: 70px;
+}
+
+.social-neworks__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.social-neworks__list {
+  display: flex;
+}
+.social-neworks__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-neworks__item:nth-child(-n + 3) {
+  margin-right: 10px;
+}
+
+.social-neworks__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--color-white);
+  transition: background-color 250ms var(--cubic);
+}
+.social-neworks__link:hover,
+.social-neworks__link:focus {
+  background-color: var(--color-accent);
+}
+/* footer social networks end */
+/* footer subscription start */
+
+.subscription {
+  margin-left: 93px;
+}
+
+.subscription__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  color: var(--color-white);
+}
+
+.subscription__form {
+  display: flex;
+}
+
+.subscription__input {
+  width: 358px;
+  height: 50px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--color-white);
+}
+
+.subscription__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer subscription start */

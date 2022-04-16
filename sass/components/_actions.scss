@@ -1,0 +1,40 @@
+/* actions start */
+
+.actions {
+  padding-top: 0;
+}
+
+.actions__list {
+  display: flex;
+}
+
+.action__item {
+  position: relative;
+}
+
+.action__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.actions__block {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding-bottom: 27px;
+  padding-top: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.actions__name {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+/* actions end */
