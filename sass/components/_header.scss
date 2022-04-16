@@ -1,20 +1,32 @@
 .header {
   outline: 1px solid #ececec;
-}
 
-.header__container {
+  &__logo {
+    margin-right: 93px;
+  }
+
+  &__logo--color {
+    color: var(--color-black);
+  }
+
+  &__container{
   display: flex;
   align-items: center;
-}
+  }
 
-/* header navigation start  */
-
-.header-nav__list {
+.header-nav{
+    &__list {
   display: flex;
-}
-.header-nav__item {
+  }
+    &__item {
   position: relative;
-}
+  }
+    &__item:not(:first-child){
+    margin-left: 50px;
+  }
+  }
+
+
 .header-nav__item:not(:first-child) {
   margin-left: 50px;
 }

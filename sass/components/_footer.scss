@@ -1,6 +1,16 @@
 /* footer start */
 
 .footer {
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__logo--color {
+    color: var(--color-white);
+  }
+}
+
+.footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
