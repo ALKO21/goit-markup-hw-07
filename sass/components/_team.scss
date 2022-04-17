@@ -1,11 +1,11 @@
 .team {
-  background-color: #f5f4fa;
+  background-color: $bgColorProjectButtons;
 
   &__list {
     display: flex;
   }
   &__items {
-    background-color: var(--color-white-background);
+    background-color: $bgColorWhite;
 
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -28,7 +28,7 @@
   &__member-position {
     text-align: center;
     margin-bottom: 16px;
-    color: var(--color-gray);
+    color: $colorGray;
   }
 }
 
@@ -52,13 +52,13 @@
     height: 100%;
     border-radius: 50%;
 
-    fill: var(--color-gray);
+    fill: $colorGray;
 
-    transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
+    transition: background-color 250ms $cubic, fill 250ms $cubic;
   }
   &__link:hover,
   &__link:focus {
-    background-color: var(--color-accent);
-    fill: var(--color-white);
+    background-color: $colorAccent;
+    fill: $colorWhite;
   }
 }

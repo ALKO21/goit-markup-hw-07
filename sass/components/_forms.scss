@@ -5,9 +5,9 @@
 
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $bgColorBackdrop;
   opacity: 1;
-  transition: opacity 250ms var(--cubic);
+  transition: opacity 250ms $cubic;
 
   &--is-hidden {
     opacity: 0;
@@ -33,7 +33,7 @@
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms, var(--cubic);
+  transition: transform 250ms, $cubic;
 
   &__title {
     margin-bottom: 12px;
@@ -56,7 +56,7 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
 
-    color: var(--color-gray);
+    color: $colorGray;
   }
   &__frame {
     width: 100%;
@@ -75,13 +75,13 @@
 
     resize: none;
 
-    transition: border 250ms var(--cubic);
+    transition: border 250ms $cubic;
   }
   &__frame:focus-within {
-    border: 1px solid var(--color-accent);
+    border: 1px solid $colorAccent;
   }
   &__frame:focus-within + &__icon {
-    fill: var(--color-accent);
+    fill: $colorAccent;
   }
 
   &__icon {
@@ -95,7 +95,7 @@
     width: 18px;
     height: 18px;
 
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
   }
   &__svg {
     width: 12px;
@@ -116,7 +116,7 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
+    color: $colorFormPlaceholderGrey;
   }
 }
 
@@ -142,10 +142,10 @@
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: var(--color-gray);
+    color: $colorGray;
   }
   &__text--accent {
-    color: var(--color-accent);
+    color: $colorAccent;
   }
 }
 
@@ -157,7 +157,7 @@
     text-transform: uppercase;
     font-size: 14px;
 
-    color: var(--color-white);
+    color: $colorWhite;
   }
   &__form {
     display: flex;
@@ -174,7 +174,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: inherit;
-    color: var(--color-white);
+    color: $colorWhite;
   }
   &__input::placeholder {
     font-weight: 400;
@@ -182,6 +182,6 @@
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
+    color: $colorSubscriptionPlaceholderGrey;
   }
 }

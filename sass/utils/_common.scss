@@ -17,10 +17,10 @@ p {
 
 body {
   font-family: roboto, sans-serif;
-  background-color: var(--color-white-background);
+  background-color: $bgColorWhite;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--color-black);
+  color: $colorBlack;
   list-style: none;
   margin: 0;
 }

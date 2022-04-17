@@ -1,5 +1,5 @@
 .social-neworks {
-  color: var(--color-white);
+  color: $colorWhite;
   margin-left: 70px;
 
   &__title {
@@ -24,11 +24,11 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: var(--color-white);
-    transition: background-color 250ms var(--cubic);
+    fill: $colorWhite;
+    transition: background-color 250ms $cubic;
   }
   &__link:hover,
   &__link:focus {
-    background-color: var(--color-accent);
+    background-color: $colorAccent;
   }
 }

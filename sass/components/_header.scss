@@ -1,12 +1,12 @@
 .header {
-  outline: 1px solid #ececec;
+  outline: 1px solid $colorOutline;
 
   &__logo {
     margin-right: 93px;
   }
 
   &__logo--color {
-    color: var(--color-black);
+    color: $colorBlack;
   }
 
   &__container {
@@ -35,7 +35,7 @@
     color: inherit;
     letter-spacing: 0.02em;
     line-height: 1.14;
-    transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+    transition: color 250ms $cubic, fill 250ms $cubic;
   }
 
   &__link--current::after {
@@ -45,13 +45,13 @@
     height: 4px;
     bottom: -1.5px;
     border-radius: 4px;
-    background-color: var(--color-accent);
+    background-color: $colorAccent;
     opacity: 1;
   }
 
   &__link:hover,
   &__link:focus {
-    color: var(--color-accent);
+    color: $colorAccent;
   }
 }
 
@@ -67,8 +67,8 @@
   &__link {
     display: flex;
     align-items: center;
-    color: var(--color-gray);
-    fill: rgba(117, 117, 117, 1);
+    color: $colorGray;
+    fill: $colorGray;
 
     padding: 32px 0;
     display: flex;
@@ -77,12 +77,12 @@
     letter-spacing: 0.02em;
     line-height: 1.14;
 
-    transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+    transition: color 250ms $cubic, fill 250ms $cubic;
   }
   &__link:hover,
   &__link:focus {
-    fill: var(--color-accent);
-    color: var(--color-accent);
+    fill: $colorAccent;
+    color: $colorAccent;
   }
 
   &__icon {

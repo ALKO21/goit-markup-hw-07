@@ -23,12 +23,12 @@
     padding-bottom: 27px;
     padding-top: 27px;
 
-    background-color: rgba(47, 48, 58, 0.8);
+    background-color: $bgColorLayout;
   }
   &__name {
     font-weight: 700;
     line-height: calc(16 / 14);
     text-transform: uppercase;
-    color: var(--color-white);
+    color: $colorWhite;
   }
 }
