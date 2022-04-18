@@ -6,3 +6,19 @@
   text-decoration: none;
   color: $colorAccent;
 }
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header-logo__accent {
+  color: $colorBlack;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-logo__accent {
+  color: $colorWhite;
+}

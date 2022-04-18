@@ -418,16 +418,25 @@ img {
   color: #2196f3;
 }
 
-.header {
-  outline: 1px solid #ececec;
-}
-
 .header__logo {
   margin-right: 93px;
 }
 
-.header__logo--color {
+.header-logo__accent {
   color: #212121;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-logo__accent {
+  color: #ffffff;
+}
+
+.header {
+  outline: 1px solid #ececec;
 }
 
 .header__container {
@@ -761,15 +770,6 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.footer__logo--color {
-  color: #ffffff;
 }
 
 .footer__container {

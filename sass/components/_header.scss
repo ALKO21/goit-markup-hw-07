@@ -1,14 +1,6 @@
 .header {
   outline: 1px solid $colorOutline;
 
-  &__logo {
-    margin-right: 93px;
-  }
-
-  &__logo--color {
-    color: $colorBlack;
-  }
-
   &__container {
     display: flex;
     align-items: center;
