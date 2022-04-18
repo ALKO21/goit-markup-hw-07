@@ -43,6 +43,10 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 
+  &--no-padding-top {
+    padding-top: 0;
+  }
+
   &__title {
     margin-bottom: 50px;
 
@@ -63,4 +67,8 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+}
+
+.section--team-background {
+  background-color: $bgColorProjectButtons;
 }

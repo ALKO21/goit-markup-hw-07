@@ -8,15 +8,14 @@
   background-color: $bgColorBackdrop;
   opacity: 1;
   transition: opacity 250ms $cubic;
+}
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
-  &--is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  &--is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
@@ -34,80 +33,81 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms, $cubic;
+}
+.modal__title {
+  margin-bottom: 12px;
 
-  &__title {
-    margin-bottom: 12px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.modal__list {
+  margin-bottom: 20px;
+}
+.modal__item:not(:first-child) {
+  margin-top: 10px;
+}
+.modal__label {
+  position: relative;
+  display: block;
 
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-  &__list {
-    margin-bottom: 20px;
-  }
-  &__item:not(:first-child) {
-    margin-top: 10px;
-  }
-  &__label {
-    position: relative;
-    display: block;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
+  color: $colorGray;
+}
+.modal__frame {
+  width: 100%;
 
-    color: $colorGray;
-  }
-  &__frame {
-    width: 100%;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 4px;
 
-    padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+  font-size: 16px;
 
-    font-size: 16px;
+  cursor: pointer;
 
-    cursor: pointer;
+  resize: none;
 
-    resize: none;
+  transition: border 250ms $cubic;
 
-    transition: border 250ms $cubic;
-  }
-  &__frame:focus-within {
+  &:focus-within {
     border: 1px solid $colorAccent;
   }
-  &__frame:focus-within + &__icon {
+  &:focus-within + .modal__icon {
     fill: $colorAccent;
   }
+}
 
-  &__icon {
-    position: absolute;
+.modal__icon {
+  position: absolute;
 
-    top: 50%;
-    left: 0;
+  top: 50%;
+  left: 0;
 
-    transform: translateX(12px);
+  transform: translateX(12px);
 
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 
-    transition: fill 250ms $cubic;
-  }
-  &__svg {
-    width: 12px;
-    height: 12px;
-  }
-  &__textarea {
-    display: block;
+  transition: fill 250ms $cubic;
+}
+.modal__svg {
+  width: 12px;
+  height: 12px;
+}
+.modal__textarea {
+  display: block;
 
-    height: 120px;
-    padding: 12px 16px;
-  }
-  &__textarea::placeholder {
+  height: 120px;
+  padding: 12px 16px;
+
+  &::placeholder {
     display: block;
     height: 100%;
     margin: 12px 16px;
@@ -126,57 +126,59 @@
   align-items: center;
 
   margin-bottom: 30px;
+}
+.checkbox__input {
+  appearance: none;
 
-  &__input {
-    appearance: none;
-  }
-  &__input:checked + &__icon {
+  &:checked + .checkbox__icon {
     fill: none;
     background-image: url(../img-vect/checkbox-mark.svg);
     width: 16px;
     height: 15px;
   }
-  &__text {
-    margin-left: 7px;
+}
 
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: $colorGray;
-  }
-  &__text--accent {
+.checkbox__text {
+  margin-left: 7px;
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $colorGray;
+
+  &--accent {
     color: $colorAccent;
   }
 }
 
 .subscription {
   margin-left: 93px;
+}
+.subscription__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
 
-  &__title {
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 14px;
+  color: $colorWhite;
+}
+.subscription__form {
+  display: flex;
+}
+.subscription__input {
+  width: 358px;
+  height: 50px;
 
-    color: $colorWhite;
-  }
-  &__form {
-    display: flex;
-  }
-  &__input {
-    width: 358px;
-    height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  color: $colorWhite;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: inherit;
-    color: $colorWhite;
-  }
-  &__input::placeholder {
+  &::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
